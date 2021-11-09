@@ -2002,7 +2002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -3051,18 +3051,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"floggy@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "floggy@npm:0.3.1"
-  dependencies:
-    chalk: ^4.1.2
-    fp-ts: ^2.11.3
-    lodash: ^4.17.21
-    strip-ansi: 6
-  checksum: aa846b887357368fa32be84f5f83f4baba61708957b62a7eb93555ae9beba0b1b51e8a7241ee039281d6e2e1e0c1629772eb06cbe2108ccf5a89ed63dfd96fa1
-  languageName: node
-  linkType: hard
-
 "for-in@npm:^1.0.2":
   version: 1.0.2
   resolution: "for-in@npm:1.0.2"
@@ -3117,13 +3105,6 @@ __metadata:
   bin:
     format-imports: dist/bin/main.js
   checksum: b570ce4dfb94094017ae61651a7e1d5c354afb92453b4ca52fada8d6104a014325ce0bc3c1beba95d75a64abad175f6953f7d317d59c3796ad90608a0b312572
-  languageName: node
-  linkType: hard
-
-"fp-ts@npm:^2.11.3":
-  version: 2.11.5
-  resolution: "fp-ts@npm:2.11.5"
-  checksum: 68a4884527abca782a2f664b13152cd797b92b6042538905af95fa0e9da2e884bc5b05bdfcfbb02fdabfe8536ae6a62a24159696545d8a263413e4c007326c4a
   languageName: node
   linkType: hard
 
@@ -4797,7 +4778,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -5637,7 +5618,6 @@ fsevents@^2.3.2:
     eslint: 8.0.1
     eslint-config-prettier: 8.3.0
     eslint-plugin-only-warn: 1.0.3
-    floggy: ^0.3.1
     format-imports: 2.4.1
     jest: 27.3.1
     jest-watch-select-projects: 2.0.0
@@ -6198,15 +6178,6 @@ fsevents@^2.3.2:
   dependencies:
     safe-buffer: ~5.1.0
   checksum: 9ab7e56f9d60a28f2be697419917c50cac19f3e8e6c28ef26ed5f4852289fe0de5d6997d29becf59028556f2c62983790c1d9ba1e2a3cc401768ca12d5183a5b
-  languageName: node
-  linkType: hard
-
-"strip-ansi@npm:6":
-  version: 6.0.1
-  resolution: "strip-ansi@npm:6.0.1"
-  dependencies:
-    ansi-regex: ^5.0.1
-  checksum: f3cd25890aef3ba6e1a74e20896c21a46f482e93df4a06567cebf2b57edabb15133f1f94e57434e0a958d61186087b1008e89c94875d019910a213181a14fc8c
   languageName: node
   linkType: hard
 

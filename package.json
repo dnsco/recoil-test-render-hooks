@@ -39,7 +39,6 @@
     "prepare": "ts-patch install -s"
   },
   "dependencies": {
-    "floggy": "^0.3.1",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
