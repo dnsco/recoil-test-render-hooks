@@ -118,3 +118,6 @@ dist-cjs
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+src/**/*.js
+tests/**/*.js
