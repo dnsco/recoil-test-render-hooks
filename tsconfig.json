@@ -8,6 +8,7 @@
     }
   },
   "compilerOptions": {
+    "jsx": "react",
     // Make the compiler stricter, catch more errors
     "strict": true,
     "noImplicitReturns": true,
@@ -48,7 +49,7 @@
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
     ]
   },
-  "include": ["src", "tests", "scripts"],
+  "include": ["src", "__tests__", "scripts"],
   // Prevent unwanted things like auto-import from built modules
   "exclude": ["dist-*"],
   "plugins": [

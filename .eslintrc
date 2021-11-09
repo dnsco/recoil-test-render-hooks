@@ -4,13 +4,17 @@
   "parserOptions": {
     "project": ["tsconfig.json"]
   },
-  "plugins": ["@typescript-eslint", "only-warn"],
+  "plugins": ["@typescript-eslint", "only-warn", "react-hooks", "jest", "prettier"],
+  "settings": {
+    "import/resolver": "typescript"
+  },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier"
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "rules": {
