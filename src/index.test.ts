@@ -99,7 +99,7 @@ describe('recoilHookRenderContext', () => {
       it('accepts a configurable timeout to await async effects', async () => {
         const { getCurrentValue } = recoilHookRenderContext()
 
-        const val = await getCurrentValue(useRecoilCustomHooks, { timeout: 8 })
+        const val = await getCurrentValue(useRecoilCustomHooks, { sleepFor: 8 })
         expect(val).toEqual('NEW VAL SET BY HOOK EFFECT')
       })
     })

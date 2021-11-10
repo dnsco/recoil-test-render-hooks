@@ -7,7 +7,7 @@ import {
 import { act, renderHook, RenderHookResult } from '@testing-library/react-hooks/dom'
 
 interface HookRenderOptions {
-  timeout?: number
+  sleepFor?: number
 }
 interface RecoilHookRenderer {
   renderRecoil<R>(
@@ -34,13 +34,13 @@ function bridgedHookRenderer(Bridge: React.FC) {
     hook: () => R,
     opts?: HookRenderOptions
   ): Promise<RenderHookResult<undefined, R>> {
-    const { timeout = 0 } = opts ?? {}
+    const { sleepFor = 0 } = opts ?? {}
 
     let rendered: RenderHookResult<undefined, R> | undefined
 
     await act(async () => {
       rendered = renderHook(hook, { wrapper: Bridge })
-      await new Promise((r) => setTimeout(r, timeout))
+      await new Promise((r) => setTimeout(r, sleepFor))
     })
 
     if (!rendered) throw new Error('Did not set hook result')
