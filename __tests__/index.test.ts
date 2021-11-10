@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { atom, AtomEffect, MutableSnapshot, useRecoilState, useRecoilValue } from 'recoil'
-import { act, recoilHookRenderContext } from './index'
+import { act, recoilHookRenderContext } from '~index'
 
 describe('recoilHookRenderContext', () => {
   const BASIC_ATOM = atom<string>({ key: 'testStringAtrom', default: 'DEFAULT' })

@@ -1093,32 +1093,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ts-nameof/common@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "@ts-nameof/common@npm:4.2.1"
-  checksum: fd107fbbc1c46d6c918858786536275ed330d85d91a9a4afe33c29e269d747c626438e78c2786a6104e02f8609ff18ffacedfa16971cc44fef86c89775bd91bf
-  languageName: node
-  linkType: hard
-
-"@ts-nameof/transforms-common@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@ts-nameof/transforms-common@npm:4.2.1"
-  dependencies:
-    "@ts-nameof/common": ^4.2.0
-  checksum: 434f9e632cd932d0b152018074731d2cd59b9b053a6213b59b8393befeb7fb5c94d5c3df9c886a790d690793d4f02ecefb135a77f4e2462a74cf33f3c37dfe2a
-  languageName: node
-  linkType: hard
-
-"@ts-nameof/transforms-ts@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@ts-nameof/transforms-ts@npm:4.2.1"
-  dependencies:
-    "@ts-nameof/common": ^4.2.0
-    "@ts-nameof/transforms-common": ^4.2.1
-  checksum: 9c1d3f5dbed313d471bfd2d1ba419ce4435aa4313a592afd84cfb8e1574b4b5b9bd201ede81a13cfc8695322fac4fed0162e417b561dcd012a81ec08ecd3e18a
-  languageName: node
-  linkType: hard
-
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.8
   resolution: "@tsconfig/node10@npm:1.0.8"
@@ -3564,7 +3538,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.1.7":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
   dependencies:
@@ -3575,17 +3549,6 @@ fsevents@^2.3.2:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: b61f48973bbdcf5159997b0874a2165db572b368b931135832599875919c237fc05c12984e38fe828e69aa8a921eb0e8a4997266211c517c9cfaae8a93988bb8
-  languageName: node
-  linkType: hard
-
-"global-prefix@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "global-prefix@npm:3.0.0"
-  dependencies:
-    ini: ^1.3.5
-    kind-of: ^6.0.2
-    which: ^1.3.1
-  checksum: 8a82fc1d6f22c45484a4e34656cc91bf021a03e03213b0035098d605bfc612d7141f1e14a21097e8a0413b4884afd5b260df0b6a25605ce9d722e11f1df2881d
   languageName: node
   linkType: hard
 
@@ -3905,13 +3868,6 @@ fsevents@^2.3.2:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
-  languageName: node
-  linkType: hard
-
-"interpret@npm:^1.0.0":
-  version: 1.4.0
-  resolution: "interpret@npm:1.4.0"
-  checksum: 2e5f51268b5941e4a17e4ef0575bc91ed0ab5f8515e3cf77486f7c14d13f3010df9c0959f37063dcc96e78d12dc6b0bb1b9e111cdfe69771f4656d2993d36155
   languageName: node
   linkType: hard
 
@@ -5105,7 +5061,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"kind-of@npm:^6.0.0, kind-of@npm:^6.0.2":
+"kind-of@npm:^6.0.0":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
   checksum: 3ab01e7b1d440b22fe4c31f23d8d38b4d9b91d9f291df683476576493d5dfd2e03848a8b05813dd0c3f0e835bc63f433007ddeceb71f05cb25c45ae1b19c6d3b
@@ -6245,15 +6201,6 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"rechoir@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "rechoir@npm:0.6.2"
-  dependencies:
-    resolve: ^1.1.6
-  checksum: fe76bf9c21875ac16e235defedd7cbd34f333c02a92546142b7911a0f7c7059d2e16f441fe6fb9ae203f459c05a31b2bcf26202896d89e390eda7514d5d2702b
-  languageName: node
-  linkType: hard
-
 "recoil-test-render-hooks@workspace:.":
   version: 0.0.0-use.local
   resolution: "recoil-test-render-hooks@workspace:."
@@ -6289,9 +6236,7 @@ fsevents@^2.3.2:
     react-dom: ^17.0.2
     recoil: ^0.5.2
     ts-jest: 27.0.7
-    ts-nameof: 5.0.0
     ts-node: 10.3.1
-    ts-patch: ^1.4.4
     tslib: ^2.3.1
     typescript: 4.4.4
     typescript-snapshots-plugin: 1.7.0
@@ -6441,7 +6386,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"resolve@^1.1.6, resolve@^1.20.0":
+resolve@^1.20.0:
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -6461,7 +6406,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
   dependencies:
@@ -6634,19 +6579,6 @@ resolve@^2.0.0-next.3:
   version: 3.0.0
   resolution: "shebang-regex@npm:3.0.0"
   checksum: 1a2bcae50de99034fcd92ad4212d8e01eedf52c7ec7830eedcf886622804fe36884278f2be8be0ea5fde3fd1c23911643a4e0f726c8685b61871c8908af01222
-  languageName: node
-  linkType: hard
-
-"shelljs@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "shelljs@npm:0.8.4"
-  dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: bin/shjs
-  checksum: 27f83206ef6a4f5b74a493726c3e6b4c3e07a9c2aac94c5e692d800a61353c18a8234967bd8523b1346abe718beb563843687fb57f466529ba06db3cae6f0bb3
   languageName: node
   linkType: hard
 
@@ -7255,19 +7187,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"ts-nameof@npm:5.0.0":
-  version: 5.0.0
-  resolution: "ts-nameof@npm:5.0.0"
-  dependencies:
-    "@ts-nameof/common": ^4.2.0
-    "@ts-nameof/transforms-ts": ^4.2.1
-    glob: ^7.1.6
-  peerDependencies:
-    typescript: "*"
-  checksum: bbbe5aeed2375d82865e04fdbca0ebe601536ce52c9b5aca75761cdb602c8c844ee7be929984a7f7ee4beeb5a328d066f56b7da829d523436cda518c3aeb4cfb
-  languageName: node
-  linkType: hard
-
 "ts-node@npm:10.3.1":
   version: 10.3.1
   resolution: "ts-node@npm:10.3.1"
@@ -7301,25 +7220,6 @@ resolve@^2.0.0-next.3:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 27d700ecc973962acf4473f043be571f9a7169cfc2fae8850b26450d88a149eb329b28f01b1a2c1068fa1e8a47cfa447066f89bc481a8f64f9b512230b744efa
-  languageName: node
-  linkType: hard
-
-"ts-patch@npm:^1.4.4":
-  version: 1.4.4
-  resolution: "ts-patch@npm:1.4.4"
-  dependencies:
-    chalk: ^4.1.0
-    glob: ^7.1.7
-    global-prefix: ^3.0.0
-    minimist: ^1.2.5
-    resolve: ^1.20.0
-    shelljs: ^0.8.4
-    strip-ansi: ^6.0.0
-  peerDependencies:
-    typescript: ">2.7.0"
-  bin:
-    ts-patch: bin/cli.js
-  checksum: 527c30b891594c83466f7dc200912f816b4dc71a10dba2fbd964ce98287e52f580460d0962e4fa8751e0b8ec2b45b019eb52a4e4c31b05c988f2447d790eb07f
   languageName: node
   linkType: hard
 
@@ -7686,17 +7586,6 @@ typescript@^4.1.3:
     is-string: ^1.0.5
     is-symbol: ^1.0.3
   checksum: 53ce774c7379071729533922adcca47220228405e1895f26673bbd71bdf7fb09bee38c1d6399395927c6289476b5ae0629863427fd151491b71c4b6cb04f3a5e
-  languageName: node
-  linkType: hard
-
-"which@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "which@npm:1.3.1"
-  dependencies:
-    isexe: ^2.0.0
-  bin:
-    which: ./bin/which
-  checksum: f2e185c6242244b8426c9df1510e86629192d93c1a986a7d2a591f2c24869e7ffd03d6dac07ca863b2e4c06f59a4cc9916c585b72ee9fa1aa609d0124df15e04
   languageName: node
   linkType: hard
 

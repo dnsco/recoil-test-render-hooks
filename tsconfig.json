@@ -1,7 +1,6 @@
 {
   "ts-node": {
     "transpileOnly": true,
-    "require": ["typescript-transform-paths/register"],
     "compilerOptions": {
       // Sometimes projects (e.g. Nextjs) will want code to emit ESM but ts-node will not work with that.
       "module": "CommonJS"
@@ -33,28 +32,9 @@
     "baseUrl": "./",
     "paths": {
       "~*": ["./src/*"]
-    },
-
-    // Other
-    // Only enable this for applications.
-    // Packages doing this force their consumers to.
-    // "esModuleInterop": true,
-
-    // Transformer Plugins made possible by https://github.com/nonara/ts-patch
-    "plugins": [
-      // https://github.com/dsherret/ts-nameof
-      { "transform": "ts-nameof", "type": "raw" },
-      // https://github.com/LeDDGroup/typescript-transform-paths
-      { "transform": "typescript-transform-paths" },
-      { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ]
+    }
   },
   "include": ["src", "__tests__", "scripts"],
   // Prevent unwanted things like auto-import from built modules
-  "exclude": ["dist-*"],
-  "plugins": [
-    {
-      "name": "typescript-snapshots-plugin"
-    }
-  ]
+  "exclude": ["dist-*"]
 }
