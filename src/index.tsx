@@ -4,7 +4,7 @@ import {
   RecoilRoot,
   useRecoilBridgeAcrossReactRoots_UNSTABLE as useRecoilBridge,
 } from 'recoil'
-import { act, renderHook, RenderHookResult } from '@testing-library/react-hooks'
+import { act, renderHook, RenderHookResult } from '@testing-library/react-hooks/dom'
 
 interface HookRenderOptions {
   timeout?: number

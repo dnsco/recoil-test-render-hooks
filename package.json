@@ -1,6 +1,6 @@
 {
   "name": "recoil-test-render-hooks",
-  "version": "0.0.2",
+  "version": "0.0.7",
   "repository": "git@github.com:jasonkuhrt/recoil-test-render-hooks.git",
   "author": "Dennis Collinson",
   "license": "MIT",
@@ -16,6 +16,7 @@
   },
   "main": "./dist-cjs/index.js",
   "module": "./dist-esm/index.js",
+  "types": "./dist-esm/index.d.ts",
   "scripts": {
     "reflect:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "yarn format:prettier && yarn format:imports",
@@ -38,11 +39,13 @@
     "prepublishOnly": "yarn build",
     "prepare": "ts-patch install -s"
   },
-  "dependencies": {
-    "@testing-library/react-hooks": "^7.0.2",
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "recoil": "^0.5.2",
+    "recoil": "^0.5.2"
+  },
+  "dependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
@@ -72,6 +75,9 @@
     "jest-watch-typeahead": "1.0.0",
     "markdown-toc": "^1.2.0",
     "prettier": "2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "recoil": "^0.5.2",
     "ts-jest": "27.0.7",
     "ts-nameof": "5.0.0",
     "ts-node": "10.3.1",
