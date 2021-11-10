@@ -1,6 +1,6 @@
 {
   "name": "recoil-test-render-hooks",
-  "version": "0.0.0-dripip",
+  "version": "0.0.2",
   "repository": "git@github.com:jasonkuhrt/recoil-test-render-hooks.git",
   "author": "Dennis Collinson",
   "license": "MIT",

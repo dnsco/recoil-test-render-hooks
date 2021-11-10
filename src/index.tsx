@@ -24,6 +24,7 @@ function recoilHookRenderContext(initializeState?: (s: MutableSnapshot) => void)
   })
 
   const Bridge = renderedBridge.current
+  if (!Bridge) throw Error(`Did not render bridge: ${renderedBridge?.error?.message ?? ':('}`)
   return bridgedHookRenderer(Bridge)
 }
 
