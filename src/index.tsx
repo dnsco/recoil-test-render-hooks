@@ -10,8 +10,12 @@ interface HookRenderOptions {
   timeout?: number
 }
 interface RecoilHookRenderer {
-  renderRecoil<R>(hook: () => R, opts?: HookRenderOptions): Promise<RenderHookResult<undefined, R>>
-  getCurrentValue<R>(hook: () => R, opts?: HookRenderOptions): Promise<R>
+  renderRecoil<R>(
+    this: void,
+    hook: () => R,
+    opts?: HookRenderOptions
+  ): Promise<RenderHookResult<undefined, R>>
+  getCurrentValue<R>(this: void, hook: () => R, opts?: HookRenderOptions): Promise<R>
 }
 
 function recoilHookRenderContext(initializeState?: (s: MutableSnapshot) => void): RecoilHookRenderer {
@@ -25,6 +29,7 @@ function recoilHookRenderContext(initializeState?: (s: MutableSnapshot) => void)
 
 function bridgedHookRenderer(Bridge: React.FC) {
   async function renderRecoil<R>(
+    this: void,
     hook: () => R,
     opts?: HookRenderOptions
   ): Promise<RenderHookResult<undefined, R>> {
@@ -43,7 +48,7 @@ function bridgedHookRenderer(Bridge: React.FC) {
     return rendered
   }
 
-  async function getCurrentValue<R>(hook: () => R, opts?: HookRenderOptions): Promise<R> {
+  async function getCurrentValue<R>(this: void, hook: () => R, opts?: HookRenderOptions): Promise<R> {
     const { result } = await renderRecoil(hook, opts)
     return result.current
   }

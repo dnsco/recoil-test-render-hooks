@@ -1,6 +1,6 @@
-import { recoilHookRenderContext, act } from './index'
-import { atom, AtomEffect, MutableSnapshot, useRecoilState, useRecoilValue } from 'recoil'
 import { useEffect } from 'react'
+import { atom, AtomEffect, MutableSnapshot, useRecoilState, useRecoilValue } from 'recoil'
+import { act, recoilHookRenderContext } from './index'
 
 describe('recoilHookRenderContext', () => {
   const BASIC_ATOM = atom<string>({ key: 'testStringAtrom', default: 'DEFAULT' })
@@ -79,7 +79,7 @@ describe('recoilHookRenderContext', () => {
         const [value, set] = useRecoilState(BASIC_ATOM)
         useEffect(() => {
           setTimeout(() => set('NEW VAL SET BY HOOK EFFECT'), 3)
-        }, [])
+        }, [set])
 
         return value
       }

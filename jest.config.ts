@@ -12,7 +12,7 @@ const config: InitialOptionsTsJest = {
   moduleNameMapper: pathsToModuleNameMapper(tsconfig.config.compilerOptions.paths, {
     prefix: '<rootDir>',
   }),
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
