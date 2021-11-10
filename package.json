@@ -17,6 +17,7 @@
   "main": "./dist-cjs/index.js",
   "module": "./dist-esm/index.js",
   "types": "./dist-esm/index.d.ts",
+  "type": "module",
   "scripts": {
     "reflect:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "yarn format:prettier && yarn format:imports",
