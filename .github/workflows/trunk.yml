@@ -40,7 +40,6 @@ jobs:
 
   release-canary:
     needs: [test, checkNpmTokenSet]
-    if: needs.checkNpmTokenSet.outputs.is_NPM_TOKEN_set == 'true'
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
