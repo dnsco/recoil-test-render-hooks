@@ -6,10 +6,11 @@ import {
 } from 'recoil'
 import { act, renderHook, RenderHookResult } from '@testing-library/react-hooks/dom'
 
-interface HookRenderOptions {
+export interface HookRenderOptions {
   sleepFor?: number
 }
-interface RecoilHookRenderer {
+
+export interface RecoilHookRenderer {
   renderRecoil<R>(
     this: void,
     hook: () => R,
